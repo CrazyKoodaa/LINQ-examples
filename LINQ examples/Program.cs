@@ -22,7 +22,7 @@ namespace LINQ_examples
         public static bool linqSameDigitsNumber(int number) => number.ToString().Skip(1).All(c => c == number.ToString()[0]);
         public static bool AllFollowingAreZeros(int number) => number.ToString().Skip(1).All(x => x == '0');
         public static bool IsPalindrome(int number) => number.ToString() == string.Concat(number.ToString().Reverse());
-        public static bool linqPalindrome(int number) => return number.ToString().SequenceEqual(number.ToString().Reverse());
+        public static bool linqPalindrome(int number) => number.ToString().SequenceEqual(number.ToString().Reverse());
         public static bool IsZero(int number) => number == 0;
 
 
